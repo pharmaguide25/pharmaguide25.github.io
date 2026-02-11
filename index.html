@@ -3,102 +3,69 @@
 <head>
     <title>Pharma_Guide25 | Pharmaceutical Industry Knowledge</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            color: #333;
-        }
+        body { margin:0; font-family: Arial, sans-serif; }
 
         header {
-            background: linear-gradient(rgba(0,51,102,0.8), rgba(0,51,102,0.8)),
-            url('https://images.unsplash.com/photo-1581091870627-3b5de6c9c9f4?auto=format&fit=crop&w=1600&q=80');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            padding: 100px 20px;
-            text-align: center;
+            background-color:#003366;
+            color:white;
+            padding:80px 20px;
+            text-align:center;
         }
 
         nav {
-            background-color: #00509e;
-            padding: 15px;
-            text-align: center;
+            background:#00509e;
+            padding:15px;
+            text-align:center;
+            position:sticky;
+            top:0;
         }
 
         nav a {
-            color: white;
-            text-decoration: none;
-            margin: 15px;
-            font-weight: bold;
+            color:white;
+            margin:15px;
+            text-decoration:none;
+            font-weight:bold;
         }
 
         section {
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        .services {
-            background-color: #f4f8fb;
+            padding:60px 20px;
+            text-align:center;
         }
 
         .card {
-            display: inline-block;
-            width: 260px;
-            margin: 20px;
-            padding: 25px;
-            background: white;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            border-radius: 10px;
+            background:#f4f8fb;
+            padding:25px;
+            margin:20px auto;
+            max-width:800px;
+            border-radius:10px;
+            box-shadow:0 4px 10px rgba(0,0,0,0.1);
         }
 
-        .resources {
-            background-color: #e9f2fa;
-        }
-
-        .resources a {
-            display: block;
-            margin: 15px;
-            color: #00509e;
-            font-weight: bold;
-            text-decoration: none;
-        }
-
-        .youtube {
-            background-color: #ffffff;
-        }
-
-        iframe {
-            width: 80%;
-            height: 400px;
-            border-radius: 10px;
+        .youtube iframe {
+            width:80%;
+            height:400px;
         }
 
         footer {
-            background-color: #003366;
-            color: white;
-            padding: 20px;
+            background:#003366;
+            color:white;
+            padding:20px;
+            text-align:center;
         }
 
         button {
-            background-color: #00509e;
-            color: white;
-            padding: 12px 25px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+            background:#00509e;
+            color:white;
+            padding:10px 20px;
+            border:none;
+            border-radius:5px;
+            cursor:pointer;
         }
 
-        button:hover {
-            background-color: #003366;
-        }
+        button:hover { background:#003366; }
 
-        @media (max-width: 768px) {
-            iframe {
-                width: 95%;
-                height: 250px;
-            }
-        }
     </style>
 </head>
 <body>
@@ -106,63 +73,118 @@
 <header>
     <h1>Pharma_Guide25</h1>
     <p>Professional Pharmaceutical Industry Knowledge Hub</p>
-    <button>Explore GMP Insights</button>
 </header>
 
 <nav>
-    <a href="#">Home</a>
-    <a href="#">GMP</a>
-    <a href="#">Regulatory</a>
-    <a href="#">Resources</a>
-    <a href="#">YouTube</a>
+    <a href="#home">Home</a>
+    <a href="#gmp">GMP</a>
+    <a href="#regulatory">Regulatory</a>
+    <a href="#resources">Resources</a>
+    <a href="#youtube">YouTube</a>
 </nav>
 
-<section class="services">
-    <h2>Our Expertise</h2>
+<!-- HOME SECTION -->
+<section id="home">
+    <h2>About Pharma_Guide25</h2>
 
     <div class="card">
-        <h3>GMP Compliance</h3>
-        <p>Comprehensive Good Manufacturing Practices guidance.</p>
+        <h3>Founder</h3>
+        <p><strong>Mr. Ganesh Chhagan Patil</strong><br>
+        MBA (OSCM), MSc (Organic Chemistry)<br>
+        8+ Years of Relevant Pharmaceutical Industry Experience</p>
     </div>
 
     <div class="card">
-        <h3>Regulatory Affairs</h3>
-        <p>Global pharmaceutical regulatory strategies.</p>
+        <h3>Our Vision</h3>
+        <p>To provide practical GMP, regulatory and quality system knowledge
+        to pharmaceutical professionals and students worldwide.</p>
     </div>
 
+</section>
+
+<!-- GMP SECTION -->
+<section id="gmp">
+    <h2>GMP Compliance</h2>
+
     <div class="card">
-        <h3>Quality Systems</h3>
-        <p>Audit readiness & quality management systems.</p>
+        <p>Guidance on Good Manufacturing Practices including:</p>
+        <ul style="text-align:left; max-width:600px; margin:auto;">
+            <li>GMP Documentation</li>
+            <li>Audit Preparation</li>
+            <li>Deviation Handling</li>
+            <li>CAPA Management</li>
+        </ul>
     </div>
 </section>
 
-<section class="resources">
-    <h2>Download GMP Resources</h2>
-    <a href="#" download>📄 GMP Audit Checklist (PDF)</a>
-    <a href="#" download>📄 SOP Template for Pharma Manufacturing</a>
-    <a href="#" download>📄 Regulatory Submission Guide</a>
+<!-- REGULATORY SECTION -->
+<section id="regulatory">
+    <h2>Regulatory Affairs</h2>
+
+    <div class="card">
+        <p>Expert insights on:</p>
+        <ul style="text-align:left; max-width:600px; margin:auto;">
+            <li>Regulatory Submissions</li>
+            <li>DMF Filing</li>
+            <li>ANDA / NDA Basics</li>
+            <li>Global Regulatory Compliance</li>
+        </ul>
+    </div>
 </section>
-<section class="youtube">
-    <h2>Featured Video from Pharma_Guide25</h2>
-    <p>Watch our latest insights on pharmaceutical industry practices.</p>
 
-    <br>
+<!-- RESOURCES SECTION -->
+<section id="resources">
+    <h2>Download Resources</h2>
 
-    <iframe 
-        src="https://www.youtube.com/embed/lYCvfV-SrY8" 
-        allowfullscreen>
-    </iframe>
+    <div class="card">
+        <p>Click below to download documents:</p>
+
+        <!-- You will replace file names after uploading -->
+        <a href="files/GMP_Checklist.pdf" download>📄 GMP Audit Checklist (PDF)</a><br><br>
+        <a href="files/SOP_Template.docx" download>📄 SOP Template (Word)</a><br><br>
+        <a href="files/Deviation_Format.xlsx" download>📄 Deviation Format (Excel)</a>
+
+    </div>
+</section>
+
+<!-- YOUTUBE SECTION -->
+<section id="youtube" class="youtube">
+    <h2>Our Latest YouTube Video</h2>
+
+    <iframe src="https://www.youtube.com/embed/lYCvfV-SrY8" allowfullscreen></iframe>
 
     <br><br>
 
     <a href="https://youtube.com/@pharma_guide25" target="_blank">
-        <button>▶ Visit Full YouTube Channel</button>
+        <button>Visit Full YouTube Channel</button>
     </a>
-
 </section>
+    <a href="#contact">Contact</a>
+    <!-- CONTACT SECTION -->
+<section id="contact">
+    <h2>Contact Us</h2>
+
+    <div class="card">
+        <form action="https://formsubmit.co/gp96632@gmail.com" method="POST">
+            
+            <input type="text" name="name" placeholder="Full Name" required style="width:80%; padding:10px; margin:10px;"><br>
+            
+            <input type="text" name="mobile" placeholder="Mobile Number" required style="width:80%; padding:10px; margin:10px;"><br>
+            
+            <input type="email" name="email" placeholder="Email Address" required style="width:80%; padding:10px; margin:10px;"><br>
+
+            <textarea name="message" placeholder="Your Message" rows="5" style="width:80%; padding:10px; margin:10px;"></textarea><br>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
+</section>
+
 <footer>
-    <p>© 2026 Pharma_Guide25 | Advancing Pharmaceutical Excellence</p>
+    © 2026 Pharma_Guide25 | Advancing Pharmaceutical Excellence
 </footer>
 
 </body>
 </html>
+
