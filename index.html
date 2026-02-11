@@ -7,61 +7,97 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #f4f8fb;
             color: #333;
         }
+
         header {
-            background-color: #003366;
+            background: linear-gradient(rgba(0,51,102,0.8), rgba(0,51,102,0.8)),
+            url('https://images.unsplash.com/photo-1581091870627-3b5de6c9c9f4?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
             color: white;
-            padding: 20px;
+            padding: 100px 20px;
             text-align: center;
         }
+
         nav {
             background-color: #00509e;
-            padding: 10px;
+            padding: 15px;
             text-align: center;
         }
+
         nav a {
             color: white;
             text-decoration: none;
             margin: 15px;
             font-weight: bold;
         }
+
         section {
             padding: 60px 20px;
             text-align: center;
         }
-        .hero {
-            background-color: white;
-        }
+
         .services {
-            background-color: #e9f2fa;
+            background-color: #f4f8fb;
         }
+
         .card {
             display: inline-block;
-            width: 250px;
+            width: 260px;
             margin: 20px;
-            padding: 20px;
+            padding: 25px;
             background: white;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-radius: 10px;
         }
+
+        .resources {
+            background-color: #e9f2fa;
+        }
+
+        .resources a {
+            display: block;
+            margin: 15px;
+            color: #00509e;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .youtube {
+            background-color: #ffffff;
+        }
+
+        iframe {
+            width: 80%;
+            height: 400px;
+            border-radius: 10px;
+        }
+
         footer {
             background-color: #003366;
             color: white;
             padding: 20px;
-            text-align: center;
         }
+
         button {
             background-color: #00509e;
             color: white;
-            padding: 10px 20px;
+            padding: 12px 25px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
         }
+
         button:hover {
             background-color: #003366;
+        }
+
+        @media (max-width: 768px) {
+            iframe {
+                width: 95%;
+                height: 250px;
+            }
         }
     </style>
 </head>
@@ -69,46 +105,58 @@
 
 <header>
     <h1>Pharma_Guide25</h1>
-    <p>Pharmaceutical Industry Knowledge Hub</p>
+    <p>Professional Pharmaceutical Industry Knowledge Hub</p>
+    <button>Explore GMP Insights</button>
 </header>
 
 <nav>
     <a href="#">Home</a>
-    <a href="#">About</a>
     <a href="#">GMP</a>
     <a href="#">Regulatory</a>
-    <a href="#">Contact</a>
+    <a href="#">Resources</a>
+    <a href="#">YouTube</a>
 </nav>
 
-<section class="hero">
-    <h2>Advancing Pharmaceutical Excellence</h2>
-    <p>Sharing real-world GMP, regulatory compliance and quality system expertise.</p>
-    <button>Explore More</button>
-</section>
-
 <section class="services">
-    <h2>Our Focus Areas</h2>
+    <h2>Our Expertise</h2>
 
     <div class="card">
         <h3>GMP Compliance</h3>
-        <p>Good Manufacturing Practices guidance and industry standards.</p>
+        <p>Comprehensive Good Manufacturing Practices guidance.</p>
     </div>
 
     <div class="card">
         <h3>Regulatory Affairs</h3>
-        <p>Global regulatory strategies and compliance support.</p>
+        <p>Global pharmaceutical regulatory strategies.</p>
     </div>
 
     <div class="card">
         <h3>Quality Systems</h3>
-        <p>Pharmaceutical quality management and audit readiness.</p>
+        <p>Audit readiness & quality management systems.</p>
     </div>
 </section>
 
+<section class="resources">
+    <h2>Download GMP Resources</h2>
+    <a href="#" download>📄 GMP Audit Checklist (PDF)</a>
+    <a href="#" download>📄 SOP Template for Pharma Manufacturing</a>
+    <a href="#" download>📄 Regulatory Submission Guide</a>
+</section>
+
+<section class="youtube">
+    <h2>Latest From Our YouTube Channel</h2>
+
+    <!-- Replace VIDEO_ID with your actual YouTube video ID -->
+    <iframe 
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+        allowfullscreen>
+    </iframe>
+
+</section>
+
 <footer>
-    <p>© 2026 Pharma_Guide25 | All Rights Reserved</p>
+    <p>© 2026 Pharma_Guide25 | Advancing Pharmaceutical Excellence</p>
 </footer>
 
 </body>
 </html>
-
